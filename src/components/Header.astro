@@ -1,0 +1,24 @@
+---
+import Logo from '../components/Logo.astro';
+---
+
+
+
+<header class="flex justify-between items-center py-6 w-[1050px] mx-auto ">
+    <div class="opacity-80 hover:opacity-100">
+        <Logo href="/" />
+    </div>
+
+    <nav>
+      <div class="dropdown dropdown-bottom dropdown-end mx-46">
+        <div tabindex="0" role="button" class="btn m-1 text-white border-gray-400 bg-slate-900 hover:bg-slate-400 focus:bg-slate-400 px-5 text-3xl">:</div>
+        <ul tabindex="0" class="dropdown-content z-[1] menu p-2 shadow bg-slate-900 rounded-box w-52  text-white">
+          <li><a href="#services" class="hover:bg-slate-500">Experiencia</a></li>
+          <li><a href="#languages" class="hover:bg-slate-500">Lenguajes</a></li>
+          <li><a href="#contact" class="hover:bg-slate-500">Contacto</a></li>
+        </ul>
+      </div>
+    </nav>
+
+
+</header>

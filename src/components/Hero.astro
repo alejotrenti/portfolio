@@ -1,0 +1,37 @@
+---
+import Me from '../components/Me.astro';
+import Header from '../components/Header.astro';
+import Instagram from '../components/icons/Instagram.astro'
+import SocialPill from '../components/SocialPill.astro';
+import LinkedIn from '../components/icons/LinkedIn.astro';
+import GitHub from '../components/icons/GitHub.astro';
+import Mail from '../components/icons/Mail.astro';
+---
+
+<section class="sm:w-[1120px] lg:grid grid-cols-2 grid-flow-col py-10 lg:py-36 mx-auto ">
+    <section class="w-screen lg:ml-12 lg:w-[460px] py-20 md:py-36">
+
+        <h1 class="animate-wiggle animate-duration-[1500ms] animate-ease-in-out text-white text-6xl font-bold flex flex-row pb-5 ">Hola, soy <span class="text-[#B8D5E3]"><span>&nbsp;</span><span class="underline underline-offset-4">Alejo</span></span>!</h1>
+        <h2 class="animate-fade-up animate-once animate-delay-500 text-white text-2xl">
+        <span class="opacity-80">Bienvenido/a a mi </span><span class="text-blue-600"> primera página oficial </span><span class="opacity-80"> soy un estudiante de programación y de desarrollo web de Buenos Aires,</span> <span class="text-sky-200">Arg<span class="text-white">e<span class="text-yellow-300">n</span><span class="text-white">t</span></span><span class="text-sky-200">ina.</span>
+        </h2>
+
+        <nav class="flex gap-x-2 gap-y-56">
+            <SocialPill href="https://www.instagram.com/atrentii/">
+                <Instagram class="w-6 h-6"/>
+            </SocialPill>
+            <SocialPill href="https://www.instagram.com/atrentii/">
+                <LinkedIn class="w-6 h-6"/>
+            </SocialPill>
+            <SocialPill href="https://www.instagram.com/atrentii/">
+                <GitHub class="w-6 h-6"/>
+            </SocialPill>
+            <SocialPill href="https://www.instagram.com/atrentii/">
+                <Mail class="w-6 h-6"/>
+            </SocialPill>
+        </nav>
+    </section>
+    <section>
+        <Me class="hover:scale-110 transition py-10 xs:ml-36 size-96 lg:w-[500px] h-auto" href="https://www.instagram.com/atrentii/"  rel="noopener norefferer" />
+</section>
+</section>

@@ -1,0 +1,53 @@
+---
+import JS from '../components/languages-icons/JS.astro';
+import HACHE from '../components/languages-icons/HACHE.astro';
+import CSSICON from './languages-icons/CSSICON.astro';
+import TailWind from './languages-icons/TailWind.astro';
+import React from './languages-icons/React.astro';
+import TypeScript from './languages-icons/TypeScript.astro';
+import SQL from './languages-icons/SQL.astro';
+import ASTRO from './languages-icons/ASTRO.astro';
+import Git from './languages-icons/Git.astro';
+import GitHub from '../components/icons/GitHub.astro';
+---
+
+<h2 id="languages" class="sm:max-w-5xl sm:container mx-auto text-4xl text-[#B8D5E3] text-center font-bold mb-10 mt-32"> Lenguajes, librerias, frameworks aprendidos o a aprender</h2>
+
+<section class="flex overflow-hidden space-x-16 group mb-40" >
+    <div class="flex space-x-16 my-4 mb-4 animate-loop-scroll group-hover:paused">
+        <JS loading="lazy" class="fill-white size-36 hover:scale-125 hover:fill-[#F0DB4F] transition blur-sm hover:blur-none drop-shadow-2xl" alt="Image 1" />
+        <HACHE loading="lazy" class="fill-white size-36 hover:scale-125 hover:fill-[#e54d26] transition blur-sm hover:blur-none drop-shadow-2xl" alt="Image 1" fill="#1572B6"/>
+        <CSSICON loading="lazy" class="fill-white size-36 hover:scale-125 hover:fill-[#1572B6] transition blur-sm hover:blur-none" alt="Image 1"/>
+        <ASTRO loading="lazy" class="fill-white size-36 hover:scale-125 hover:fill-[#BC52EE] transition blur-sm hover:blur-none" alt="Image 1"/>
+        <TailWind loading="lazy" class="fill-white size-36 hover:scale-125 hover:fill-[#1572B6] transition blur-sm hover:blur-none" alt="Image 1"/>
+        <React loading="lazy" class="fill-white size-36 hover:scale-125 hover:fill-[#61DAFB] transition blur-sm hover:blur-none" alt="Image 1"/>
+        <TypeScript loading="lazy" class="fill-white size-40 hover:scale-125 hover:fill-[#007ACC] transition blur-sm hover:blur-none" alt="Image 1"/>
+        <Git loading="lazy" class="fill-white size-36 hover:scale-125 hover:fill-[#F05032] transition blur-sm hover:blur-none" alt="Image 1"/>
+        <GitHub loading="lazy" class="fill-white size-36 hover:scale-125 hover:fill-[#181717] transition blur-sm hover:blur-none" alt="Image 1"/>
+        <SQL loading="lazy" class="fill-white size-36 hover:scale-125 hover:fill-[#4479A1] transition blur-sm hover:blur-none" alt="Image 1"/>
+        
+      </div>
+      <div class="flex space-x-16 my-4 mb-4 animate-loop-scroll group-hover:paused" aria-hidden="true">
+        <JS loading="lazy" class="fill-white size-36 hover:scale-125 hover:fill-[#F0DB4F] transition blur-sm hover:blur-none drop-shadow-2xl" alt="Image 1" />
+        <HACHE loading="lazy" class="fill-white size-36 hover:scale-125 hover:fill-[#e54d26] transition blur-sm hover:blur-none drop-shadow-2xl" alt="Image 1" fill="#1572B6"/>
+        <CSSICON loading="lazy" class="fill-white size-36 hover:scale-125 hover:fill-[#1572B6] transition blur-sm hover:blur-none" alt="Image 1"/>
+        <ASTRO loading="lazy" class="fill-white size-36 hover:scale-125 hover:fill-[#BC52EE] transition blur-sm hover:blur-none" alt="Image 1"/>
+        <TailWind loading="lazy" class="fill-white size-36 hover:scale-125 hover:fill-[#1572B6] transition blur-sm hover:blur-none" alt="Image 1"/>
+        <React loading="lazy" class="fill-white size-36 hover:scale-125 hover:fill-[#61DAFB] transition blur-sm hover:blur-none" alt="Image 1"/>
+        <TypeScript loading="lazy" class="fill-white size-40 hover:scale-125 hover:fill-[#007ACC] transition blur-sm hover:blur-none" alt="Image 1"/>
+        <Git loading="lazy" class="fill-white size-36 hover:scale-125 hover:fill-[#F05032] transition blur-sm hover:blur-none" alt="Image 1"/>
+        <GitHub loading="lazy" class="fill-white size-36 hover:scale-125 hover:fill-[#181717] transition blur-sm hover:blur-none" alt="Image 1"/>
+        <SQL loading="lazy" class="fill-white size-36 hover:scale-125 hover:fill-[#4479A1] transition blur-sm hover:blur-none" alt="Image 1"/>
+      </div>
+</section>
+<style>
+    @tailwind base;
+    @tailwind components;
+    @tailwind utilities;
+
+    @layer utilities {
+        .paused {
+            animation-play-state: paused;
+        }
+    }
+</style>
